@@ -18,3 +18,5 @@ El dataset con la información necesaria para realizar las búsquedas tiene el s
   }
 ]
 ```
+# Como vamos a trabajar
+Todos los cambios van a salir de la rama developer, cada nuevo cambio que se quiera ingresar a developer se va a tener que generar un pull request, este pull request sera revisado y aprobado por todos antes de ser aprobado y mergeado.
