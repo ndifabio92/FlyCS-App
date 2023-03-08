@@ -1,0 +1,25 @@
+body{
+    background-color: beige;
+}
+
+.imagen-central{
+    display: flex;
+    width: 40%;
+}
+
+.br{
+    width: 150px;
+}
+.container {
+    width: 50%;
+    height: 325px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #a79f9f;
+    border-radius: 50px;
+    background-color: #fdedec;
+    margin-top: 200px;
+
+}
