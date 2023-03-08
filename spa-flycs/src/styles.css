@@ -2,24 +2,26 @@ body{
     background-color: beige;
 }
 
-.imagen-central{
-    display: flex;
-    width: 40%;
+.logo{
+
+    width: 25%;
+    height: 60px;
+    
 }
 
 .br{
     width: 150px;
 }
 .container {
-    width: 50%;
-    height: 325px;
+    width: 90%;
+    height: 80px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     border: 3px solid #a79f9f;
     border-radius: 50px;
-    background-color: #fdedec;
-    margin-top: 200px;
+    background-color: #fbf5d3;
+    margin-top: 50px;
 
 }

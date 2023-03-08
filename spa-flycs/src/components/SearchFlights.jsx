@@ -19,18 +19,19 @@ export const SearchFlights = () => {
    }}>
       
          
-      <img className="logo" src="FlyCS-App\spa-flycs\src\img\nemo.jpg" alt="logo" />
+      {/* <img className="logo" src={img} alt="logo" /> */}
+        
         <div className="container">
     
-      
-      
-           
         <TextField color='text' id="outlined-basic" label="origen" variant="filled" />
         <TextField color='text' id="outlined-basic" label="destino" variant="filled" />
         <TextField color='text' id="outlined-basic" label="presupuesto" variant="filled" />
+        
         <Button sx={{
-          mt:2
-        }} variant='contained' color="primary">buscar vuelos baratos </Button>
+          height:'56px'
+        }} variant='contained' color="primary">
+          buscar vuelos baratos 
+          </Button>
     
 
         
