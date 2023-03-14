@@ -30,7 +30,7 @@ const GetVuelo= () => {
 
 
 
- export const GetFlight = ({price}) => {
+ export const GetFlight = ({SearchToGEt}) => {
 
   
     
@@ -48,7 +48,7 @@ return (
                         flexWrap:'wrap',
                         justifyContent:'center'
                       }}>
-                      {vueloEncontrado.filter((item) => item.price === price ).map(item => {
+                      {vueloEncontrado.filter((item) => item.price === SearchToGEt ).map(item => {
                             
                           return (
                                   <>

@@ -30,13 +30,13 @@ export const SearchFlights = () => {
     
   }
 
+const [datos, setDatos] = useState('')
 
 
-
-  const onSubmit =(e) =>{
-    e.preventDefault();
+  const SearchToGet =() =>{
+    
     console.log(price);
-    GetFlight({price});
+    setDatos(price)
   
     
     
@@ -96,8 +96,8 @@ export const SearchFlights = () => {
         value={price}
         onChange={onPriceChange}
         />
-                
-        <Button onClick={onSubmit} sx={{
+                <GetFlight SearchToGet={datos}/>
+        <Button onClick={() => SearchToGet()} sx={{
           height:'56px'
         }} variant='contained' color="primary">
           <SearchIcon/> buscar vuelos baratos 
