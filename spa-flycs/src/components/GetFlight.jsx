@@ -30,7 +30,7 @@ const GetVuelo= () => {
 
 
 
- export const GetFlight = ({SearchToGEt}) => {
+ export const GetFlight = ({SearchToGet}) => {
 
   
     
@@ -41,6 +41,9 @@ return (
 
 
           <>
+
+
+                      
                       <Box sx={{
                         maxWidth:1800,
                         display:'flex',
@@ -48,7 +51,7 @@ return (
                         flexWrap:'wrap',
                         justifyContent:'center'
                       }}>
-                      {vueloEncontrado.filter((item) => item.price === SearchToGEt ).map(item => {
+                      {vueloEncontrado.filter((item) => item.price < SearchToGet ).map(item => {
                             
                           return (
                                   <>

@@ -96,7 +96,7 @@ const [datos, setDatos] = useState('')
         value={price}
         onChange={onPriceChange}
         />
-                <GetFlight SearchToGet={datos}/>
+                
         <Button onClick={() => SearchToGet()} sx={{
           height:'56px'
         }} variant='contained' color="primary">
@@ -104,7 +104,7 @@ const [datos, setDatos] = useState('')
           </Button>
   
         </div>
-        
+        <GetFlight SearchToGet={datos}/>
         </Box>
     </>
   )
