@@ -1,21 +1,30 @@
 import * as React from 'react';
 
 import './styles.css';
-import { SearchFlights } from './components/SearchFlights';
+
 import ResponsiveAppBar from './components/NavBar';
-import BasicCard from './components/Card';
 import { Grid } from '@mui/material';
-
-
+// import CardFlight from './components/CardFlight';
+import { GetFlight } from './components/GetFlight';
+// import { GetVuelo } from './components/GetVuelo';
+// import Vuelo from './components/GetVuelo';
+import { SearchFlights } from './components/SearchFlights';
 
 
 function App() {
+
+  
+  
+
+
   return (
 
    <>   
 
+              
              <ResponsiveAppBar/>
             <SearchFlights/>
+
 
             <Grid container spacing={2} sx={{
               mt:'30px',
@@ -24,16 +33,11 @@ function App() {
 
             }}  >
 
-                    <BasicCard/>
-                    <BasicCard/>
-
-            </Grid>
+                    {/* <CardFlight/> */}
+                    <GetFlight/>
                   
 
-           
-            
-          
-        
+            </Grid>
    </>
   );
 }

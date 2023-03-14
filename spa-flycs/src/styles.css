@@ -1,5 +1,6 @@
 body{
-    background-color: beige;
+    background-image:  linear-gradient(rgb(245, 124, 124), rgb(249, 249, 177));
+    opacity: 90%;
 }
 
 .logo{

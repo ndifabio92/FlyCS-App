@@ -7,6 +7,9 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import FlightTakeoffIcon from '@mui/icons-material/FlightTakeoff';
 import FlightLandIcon from '@mui/icons-material/FlightLand';
+import { ListItem } from '@mui/material';
+// import { GetVuelo } from './GetVuelo';
+
 
 const bull = (
   <Box
@@ -16,8 +19,12 @@ const bull = (
     •
   </Box>
 );
+ 
 
-export default function BasicCard() {
+
+export default function CardFlight() {
+
+  
   return (
     <Card sx={{ minWidth: 275 }}>
       <CardContent>
@@ -28,24 +35,22 @@ export default function BasicCard() {
         }}>
             <Typography sx={{ fontSize: '1.5rem' }} color="text.secondary" > 
         <FlightTakeoffIcon fontSize='large'/>
-        MDZ
+        {}
         </Typography>
         <Typography sx={{ fontSize: '1.5rem' }} color="text.secondary" > 
         <FlightLandIcon fontSize='large'/>
-        BRC
+        MDZ
         </Typography>
         </Box>
         
-        
-        
-        <Typography variant="body2" >
-          {bull}Cantidad de pasajes
-        </Typography>
         <Typography  variant="body2" >
-        {bull}Fecha
+        {bull}Fecha 
         </Typography>
         <Typography variant="body2">
         {bull}Precio
+        <Typography variant="body2" >
+          {bull}Asientos Disponibles
+        </Typography>
           <br />
           
         </Typography>
