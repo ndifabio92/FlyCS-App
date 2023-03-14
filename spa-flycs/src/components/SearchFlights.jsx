@@ -5,14 +5,14 @@ import { TextField } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import { useState } from 'react';
 import {GetFlight} from './GetFlight';
-// import { useEffect } from 'react';
+ import { useEffect } from 'react';
 // import { GetVuelo } from './GetVuelo';
 
 
 export const SearchFlights = () => {
 
-    const [origin, setOrigin] = useState('EPA');
-    const [destination, setDestination] = useState('MDZ');
+    const [origin, setOrigin] = useState('');
+    const [destination, setDestination] = useState('');
     const [price, setPrice] = useState(0.0)
     const onOriginChange = (e) => {
       
@@ -30,20 +30,25 @@ export const SearchFlights = () => {
     
   }
 
-const [datos, setDatos] = useState('')
+const [datos, setDatos] = useState( {
+
+  origen:'',
+  destino:'',
+  precio:0,
+});
 
 
   const SearchToGet =() =>{
     
-    console.log(price);
-    setDatos(price)
-  
+    setDatos({ ...datos, precio:price,  origen:origin,destino:destination });
+    
+    console.log(datos);
     
     
 }
-  // useEffect(() => {
-  //  Vuelo(price);
-  // }, )
+  useEffect(() => { 
+   
+  }, [datos])
   
 
 

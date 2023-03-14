@@ -4,6 +4,8 @@ import { useState } from 'react';
 import data from '../dataset.json'
 import FlightTakeoffIcon from '@mui/icons-material/FlightTakeoff';
 import FlightLandIcon from '@mui/icons-material/FlightLand';
+import LinearScaleIcon from '@mui/icons-material/LinearScale';
+
 
 const bull = (
   <Box
@@ -56,18 +58,22 @@ return (
                           return (
                                   <>
                                   
-                                  <Card sx={{ minWidth: 275 }}>
+                                  <Card sx={{ minWidth: 275, m:2 }}>
                                 <CardContent>
 
                                   <Box sx={{
                                       display:'flex',
                                       justifyContent:'space-around'
                                   }}>
-                                      <Typography sx={{ fontSize: '1.5rem' }} color="text.secondary" > 
+                                      <Typography sx={{ fontSize: '1.5rem',display:'flex',flexDirection:'column',alignItems:'center' }} color="text.secondary" > 
                                   <FlightTakeoffIcon fontSize='large'/>
                                   {item.origin}
                                   </Typography>
                                   <Typography sx={{ fontSize: '1.5rem' }} color="text.secondary" > 
+                                  <LinearScaleIcon fontSize='large'/>
+                                  
+                                  </Typography>
+                                  <Typography sx={{ fontSize: '1.5rem' ,display:'flex',flexDirection:'column',alignItems:'center'}} color="text.secondary" > 
                                   <FlightLandIcon fontSize='large'/>
                                   {item.destination}
                                   </Typography>

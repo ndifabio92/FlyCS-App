@@ -8,7 +8,7 @@ import { Grid } from '@mui/material';
 import { GetFlight } from './components/GetFlight';
 // import { GetVuelo } from './components/GetVuelo';
 // import Vuelo from './components/GetVuelo';
-import { SearchFlights } from './components/SearchFlights';
+import { SearchFlights,datos } from './components/SearchFlights';
 
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
 
               
              <ResponsiveAppBar/>
-            <SearchFlights/>
+            <SearchFlights />
 
 
             <Grid container spacing={2} sx={{
